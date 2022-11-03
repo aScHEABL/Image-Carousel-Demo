@@ -6,23 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Carousel</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./scripts.js" defer></script>
 </head>
 <body>
     <section aria-label="Photo Showcase">
-        <div class="carousel">
-            <button class="carousel-button prev">&#8656;</button>
-            <button class="carousel-button next">&#8658;</button>
-        <ul>
-            <li class="slide" data-active>
-                <img src="https://source.unsplash.com/Cn1U12cQ2L8" alt="slide #1">
-            </li>
-            <li class="slide">
-                <img src="https://source.unsplash.com/arA-vdbgK5A" alt="slide #2">
-            </li>
-            <li class="slide">
-                <img src="https://source.unsplash.com/uifTyG8vUCk" alt="slide #3">
-            </li>
-        </ul>
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+            <ul data-slides>
+                <li class="slide" data-active>
+                    <img src="https://source.unsplash.com/Cn1U12cQ2L8" alt="slide #1">
+                </li>
+                <li class="slide">
+                    <img src="https://source.unsplash.com/arA-vdbgK5A" alt="slide #2">
+                </li>
+                <li class="slide">
+                    <img src="https://source.unsplash.com/uifTyG8vUCk" alt="slide #3">
+                </li>
+            </ul>
         </div>
     </section>
 </body>
